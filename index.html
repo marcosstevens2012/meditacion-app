@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meditacion App</title>
+  </head>
+  <body>
+    <div class="input">
+      <label>Seleccionar Respiraciones</label>
+      <select class="breath-input">
+        <option value="3">3 Respiraciones</option>
+        <option value="5">5 Respiraciones</option>
+        <option value="7">7 Respiraciones</option>
+        <option value="10">7 Respiraciones</option>
+      </select>
+    </div>
+    <div class="circle-wrap">
+      <div class="circle-outline"></div>
+      <div class="circle-progress"></div>
+    </div>
+    <p class="breaths">Respiraciones Restantes: <span class="breaths-text">3</span></p>
+    <p class="instructions">Are you ready to start breathing?</p>
+    <audio id="audio"  autoplay loop style="margin: 15px;">
+        <source src="meditation.mp3" type="audio/mp3">
+            Tu navegador no soporta audio HTML5.
+    </audio>
+    <button class="start">Comenzar</button>
+    <script src="app.js"></script>
+  </body>
+</html>
